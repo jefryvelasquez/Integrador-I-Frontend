@@ -1,0 +1,11 @@
+<h2>Mis Proyectos</h2>
+
+<ul class="proyectos">
+  <li *ngFor="let proyecto of proyectos"
+    [class.selected]="proyecto === selectedProyecto"
+    (click)="onSelect(proyecto)">
+    <span class="badge">{{proyecto.id}}</span> {{proyecto.name}}
+  </li>
+</ul>
+
+<app-proyecto-detalles [proyecto]="selectedProyecto"></app-proyecto-detalles>

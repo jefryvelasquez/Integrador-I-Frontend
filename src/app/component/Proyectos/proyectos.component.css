@@ -1,0 +1,44 @@
+/* HeroesComponent's private CSS styles */
+.proyectos {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .proyectos li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 2.6em;
+    border-radius: 4px;
+  }
+  .proyectos li:hover {
+    color: #607D8B;
+    background-color: rgb(50, 203, 214);
+    left: .1em;
+  }
+  .proyectos li.selected {
+    background-color: rgb(59, 214, 20);
+    color: white;
+  }
+  .proyectos li.selected:hover {
+    background-color: rgb(88, 16, 221);
+    color: white;
+  }
+  .proyectos .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#596140;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 2.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
