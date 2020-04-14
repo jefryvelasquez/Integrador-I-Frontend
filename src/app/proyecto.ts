@@ -1,4 +1,3 @@
-import { JsonProperty, JsonObject } from 'json2typescript';
 
 export class Proyecto{
     id: number;

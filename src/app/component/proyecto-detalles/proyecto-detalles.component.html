@@ -7,11 +7,9 @@
     <div><span>Responsable: </span>{{proyecto.responsable}}</div>
     <div><span>Modalidad: </span>{{proyecto.modalidad}}</div>
     <div><span>Asesor: </span>{{proyecto.asesor}}</div>
-    <div><span>Fecha de Creación: </span>{{proyecto.fecha_Creacion}}</div>
-    <div><span>Fecha de Inicio : </span>{{proyecto.fecha_Inicial}}</div>
-    <div><span>Fecha de finalizacion : </span>{{proyecto.fecha_Final}}</div>
+    <div><span>Fecha de Creación: </span>{{proyecto.fecha_Creacion.toLocaleString().slice(0,10)}}</div>
+    <div><span>Fecha de Inicio : </span>{{proyecto.fecha_Inicial.toLocaleString().slice(0,10)}}</div>
+    <div><span>Fecha de finalizacion : </span>{{proyecto.fecha_Final.toLocaleString().slice(0,10)}}</div>
     <div><span>Objetivos: </span>{{proyecto.objetivos}}</div>
   
 </div>
-
-<app-messages></app-messages>

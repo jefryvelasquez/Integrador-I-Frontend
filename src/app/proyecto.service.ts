@@ -25,7 +25,7 @@ export class ProyectoService {
   getProyectos (): Observable<Proyecto[]> {
   return this.http.get<Proyecto[]>(this.proyectosUrl + '/proyectos')
   .pipe(
-    tap(e => console.log(e[0].fecha_Creacion)),
+    tap(e => console.log(e[0])),
     catchError(this.handleError<Proyecto[]>('getProyectos', []))
   );
 }
