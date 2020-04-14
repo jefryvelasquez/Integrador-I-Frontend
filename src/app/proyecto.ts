@@ -1,11 +1,13 @@
-export interface Proyecto{
+import { JsonProperty, JsonObject } from 'json2typescript';
+
+export class Proyecto{
     id: number;
     name: string;
     responsable: string;
     modalidad: string;
     asesor: string;
-    fechaCreacion: Date;
-    fechaInicial: Date;
-    fechaFinal: Date;
+    fecha_Creacion: Date;
+    fecha_Inicial: Date;
+    fecha_Final: Date;
     objetivos: string;
 }

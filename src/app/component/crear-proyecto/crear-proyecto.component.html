@@ -1,0 +1,53 @@
+<h3>Nuevo Proyecto</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Nombre del Proyecto:</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="proyecto.name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="Responsable">Responsable:</label>
+            <input type="text" class="form-control" id="Responsable" required [(ngModel)]="proyecto.responsable" name="Responsable">
+        </div>
+
+        <div class="form-group">
+            <label for="modalidad">Modalidad:</label>
+            <input type="text" class="form-control" id="modalidad" required [(ngModel)]="proyecto.modalidad" name="modalidad">
+        </div>
+
+        <div class="form-group">
+            <label for="asesor">Asesor:</label>
+            <input type="text" class="form-control" id="asesor" required [(ngModel)]="proyecto.asesor" name="asesor">
+        </div>
+
+        <div class="form-group">
+            <label for="fechaCreacion">Fecha de Creación:</label>
+            <input type="date" class="form-control" id="fechaCreacion" required [(ngModel)]="proyecto.fecha_Creacion" name="fechaCreacion">
+        </div>
+
+        <div class="form-group">
+            <label for="fechaInicial">Fecha de Inicio:</label>
+            <input type="date" class="form-control" id="fechaInicial" required [(ngModel)]="proyecto.fecha_Inicial" name="fechaInicial">
+        </div>
+
+        <div class="form-group">
+            <label for="fechaFinal">Fecha Final:</label>
+            <input type="date" class="form-control" id="fechaFinal" required [(ngModel)]="proyecto.fecha_Final" name="fechaFinal">
+        </div>
+
+        <div class="form-group">
+            <label for="objetivos">Objetivos:</label>
+            <input type="text" class="form-control" id="objetivos" required [(ngModel)]="proyecto.objetivos" name="objetivos">
+        </div>
+
+        <button type="submit" class="btn btn-success">Crear Proyecto</button>
+    </form>
+</div>
+
+
+<div [hidden]="!submitted">
+    <h4>El Proyecto fue Creado</h4>
+</div>
+
+<app-messages></app-messages>

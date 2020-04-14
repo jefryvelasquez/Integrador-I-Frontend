@@ -19,15 +19,23 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '',
-    title: 'UI Components',
+    title: 'Proyectos',
     icon: 'mdi mdi-dots-horizontal',
     class: 'nav-small-cap',
     extralink: true,
     submenu: []
   },
   {
-    path: '/component/accordion',
-    title: 'Accordion',
+    path: '/component/ListarProyectos',
+    title: 'Listar Proyectos',
+    icon: 'mdi mdi-equal',
+    class: '',
+    extralink: false,
+    submenu: []
+  },
+  {
+    path: '/component/CrearProyecto',
+    title: 'Crear Proyecto',
     icon: 'mdi mdi-equal',
     class: '',
     extralink: false,

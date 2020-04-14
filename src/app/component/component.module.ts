@@ -9,6 +9,8 @@ import { ComponentsRoutes } from './component.routing';
 import { NgbdAccordionBasicComponent } from './accordion/accordion.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ProyectoDetallesComponent } from './proyecto-detalles/proyecto-detalles.component';
+import { CrearProyectoComponent } from './crear-proyecto/crear-proyecto.component';
+import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ProyectoDetallesComponent } from './proyecto-detalles/proyecto-detalles
   declarations: [
     NgbdAccordionBasicComponent,
     ProyectosComponent,
-    ProyectoDetallesComponent
+    ProyectoDetallesComponent,
+    CrearProyectoComponent,
+    MessagesComponent
   ]
 })
 export class ComponentsModule {}
