@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ComponentsRoutes } from './component.routing';
 import { NgbdAccordionBasicComponent } from './accordion/accordion.component';
-import { ProyectosComponent } from './proyectos/proyectos.component';
+import { ProyectosComponent } from './Proyectos/proyectos.component';
 import { ProyectoDetallesComponent } from './proyecto-detalles/proyecto-detalles.component';
 import { CrearProyectoComponent } from './crear-proyecto/crear-proyecto.component';
 import { MessagesComponent } from './messages/messages.component';

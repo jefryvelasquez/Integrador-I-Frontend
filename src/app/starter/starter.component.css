@@ -3,15 +3,15 @@ body{
 }
 
 #main-container{
-    margin: 150px;
-    width: 600px;
+    margin: 150px auto;
+    width: 600px auto;
 }
 
 table{
     background-color: white;
     text-align: left;
     border-collapse: collapse;
-    width: 100%;
+    width: 30%;
 }
 
 th, td{
@@ -26,6 +26,7 @@ thead{
 }
 
 tr:nth-child(even){
+    
     background-color: #ddd;
 }
 

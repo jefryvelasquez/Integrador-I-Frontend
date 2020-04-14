@@ -1,15 +1,21 @@
 <div *ngIf="proyecto">
-
-    <h1>{{proyecto.name | uppercase}}</h1>    
     <h3>Detalles del Proyecto:</h3>
-    <div><span>Id: </span>{{proyecto.id}}</div>
-    <div><span>Nombre: </span>{{proyecto.name}}</div>
-    <div><span>Responsable: </span>{{proyecto.responsable}}</div>
-    <div><span>Modalidad: </span>{{proyecto.modalidad}}</div>
-    <div><span>Asesor: </span>{{proyecto.asesor}}</div>
-    <div><span>Fecha de Creación: </span>{{proyecto.fecha_Creacion.toLocaleString().slice(0,10)}}</div>
-    <div><span>Fecha de Inicio : </span>{{proyecto.fecha_Inicial.toLocaleString().slice(0,10)}}</div>
-    <div><span>Fecha de finalizacion : </span>{{proyecto.fecha_Final.toLocaleString().slice(0,10)}}</div>
-    <div><span>Objetivos: </span>{{proyecto.objetivos}}</div>
-  
+    <table>
+        <thead>
+            <tr>
+               
+            </tr>
+        </thead>
+        <tr><h1>{{proyecto.name | uppercase}}</h1></tr>
+                <tr><div><td><span>Id: </span></td><td>{{proyecto.id}}</td></div></tr>
+                <tr><div><td><span>Nombre: </span></td><td>{{proyecto.name}}</td></div></tr>
+                <tr><div><td><span>Responsable: </span></td><td>{{proyecto.responsable}}</td></div></tr>
+                <tr><div><td><span>Modalidad: </span></td><td>{{proyecto.modalidad}}</td></div></tr>
+                <tr><div><td><span>Asesor: </span></td><td>{{proyecto.asesor}}</td></div></tr>
+                <tr><div><td><span>Fecha de Creación: </span></td><td>{{proyecto.fecha_Creacion.toLocaleString().slice(0,10)}}</td></div></tr>
+                <tr><div><td><span>Fecha de Inicio : </span></td><td>{{proyecto.fecha_Inicial.toLocaleString().slice(0,10)}}</td></div></tr>
+                <tr><div><td><span>Fecha de finalizacion : </span></td><td>{{proyecto.fecha_Final.toLocaleString().slice(0,10)}}</td></div></tr>
+                <tr><div><td><span>Objetivos: </span></td><td>{{proyecto.objetivos}}</td></div></tr>
+
+    </table>
 </div>

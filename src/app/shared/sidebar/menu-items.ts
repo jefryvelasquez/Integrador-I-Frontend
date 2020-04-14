@@ -11,7 +11,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/starter',
-    title: 'Starter Page',
+    title: 'Gestion proyectos HOME',
     icon: 'mdi mdi-file',
     class: '',
     extralink: false,

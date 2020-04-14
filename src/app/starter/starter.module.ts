@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Starter Page',
+      title: 'Gestion de proyectos',
       urls: [
         { title: 'Dashboard', url: '/dashboard' },
         { title: 'Starter Page' }
