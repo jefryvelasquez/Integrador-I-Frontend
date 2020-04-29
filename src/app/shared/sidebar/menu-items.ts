@@ -32,7 +32,7 @@ export const ROUTES: RouteInfo[] = [
     class: '',
     extralink: false,
     submenu: []
-  },
+  }/*,
   {
     path: '/component/CrearProyecto',
     title: 'Crear Proyecto',
@@ -40,5 +40,5 @@ export const ROUTES: RouteInfo[] = [
     class: '',
     extralink: false,
     submenu: []
-  }
+  }*/
 ];

@@ -1,11 +1,30 @@
-<h2>Mis Proyectos</h2>
-
-<ul class="proyectos">
-  <li *ngFor="let proyecto of proyectos"
-    [class.selected]="proyecto === selectedProyecto"
-    (click)="onSelect(proyecto)">
-    <span class="badge">{{proyecto.id}}</span> {{proyecto.name}}
-  </li>
-</ul>
-
+<div style="overflow-x:auto;" class="container">
+  <div class="row">
+    <div class="col-10">
+      <table class="proyectos">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Asesor</th>
+            <th scope="col">Modalidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let proyecto of proyectos" [class.selected]="proyecto === selectedProyecto"
+            (click)="onSelect(proyecto)">
+            <th>{{proyecto.id}}</th>
+            <td>{{proyecto.name}}</td>
+            <td>{{proyecto.asesor}} </td>
+            <td>{{proyecto.modalidad}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-default" onclick="location.href='/component/CrearProyecto'">
+        Crear Proyecto</button>
+    </div>
+  </div>
+</div>
 <app-proyecto-detalles [proyecto]="selectedProyecto"></app-proyecto-detalles>

@@ -1,51 +1,106 @@
-<h3>Nuevo Proyecto</h3>
-<div [hidden]="submitted" style="width: 400px;">
-    <form (ngSubmit)="onSubmit()">
-        <div class="form-group">
-            <label for="name">Nombre del Proyecto:</label>
-            <input type="text" class="form-control" id="name" required [(ngModel)]="proyecto.name" name="name">
+<div class="container">
+
+    <form #heroForm="ngForm" appIdentityRevealed (ngSubmit)="onSubmit()">
+        <div [hidden]="heroForm.submitted">
+            <div class="cross-validation">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" class="form-control" required minlength="4" [(ngModel)]="proyecto.name"
+                        #name="ngModel">
+
+                    <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
+
+                        <div *ngIf="name.errors.required">
+                            El nombre es requerido
+                        </div>
+                        <div *ngIf="name.errors.minlength">
+                            El nombre debe tener al menos 4 caracteres
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Responsable">Responsable:</label>
+                    <input type="text" class="form-control" id="Responsable" required [(ngModel)]="proyecto.responsable"
+                        name="Responsable" #Responsable="ngModel">
+
+                    <div *ngIf="Responsable.invalid && Responsable.touched" class="alert alert-danger">
+
+                        <div *ngIf="Responsable.errors.required">
+                            El responsable es requerido
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalidad">Modalidad:</label>
+                    <input type="text" class="form-control" id="modalidad" required [(ngModel)]="proyecto.modalidad"
+                        name="modalidad">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="asesor">Asesor:</label>
+                    <input type="text" class="form-control" id="asesor" required [(ngModel)]="proyecto.asesor"
+                        name="asesor" #asesor="ngModel">
+
+                    <div *ngIf="asesor.invalid && asesor.touched" class="alert alert-danger">
+
+                        <div *ngIf="asesor.errors.required">
+                            El asesor es requerido
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaCreacion">Fecha de Creación:</label>
+                    <input type="date" class="form-control" id="fechaCreacion" required
+                        [(ngModel)]="proyecto.fecha_Creacion" name="fechaCreacion" #fechaCreacion="ngModel">
+
+                    <div *ngIf="fechaCreacion.invalid && fechaCreacion.touched" class="alert alert-danger">
+
+                        <div *ngIf="fechaCreacion.errors.required">
+                            La fecha de creación es obligatoria
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaInicial">Fecha de Inicio:</label>
+                    <input type="date" class="form-control" id="fechaInicial" [(ngModel)]="proyecto.fecha_Inicial"
+                        name="fechaInicial">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaFinal">Fecha Final:</label>
+                    <input type="date" class="form-control" id="fechaFinal" [(ngModel)]="proyecto.fecha_Final"
+                        name="fechaFinal">
+                </div>
+
+                <div class="form-group">
+                    <label for="objetivos">Objetivos:</label>
+                    <input type="text" class="form-control" id="objetivos" required [(ngModel)]="proyecto.objetivos"
+                        name="objetivos" #objetivos="ngModel">
+
+                    <div *ngIf="objetivos.invalid && objetivos.touched" class="alert alert-danger">
+
+                        <div *ngIf="objetivos.errors.required">
+                            Los objetivos son obligatorios
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-default" [disabled]="heroForm.invalid">Crear Proyecto</button>
+            <button type="button" class="btn btn-default" (click)="heroForm.resetForm({})">Reset</button>
         </div>
 
-        <div class="form-group">
-            <label for="Responsable">Responsable:</label>
-            <input type="text" class="form-control" id="Responsable" required [(ngModel)]="proyecto.responsable" name="Responsable">
+        <div class="submitted-message" *ngIf="heroForm.submitted">
+            <p>El proyecto fue creado, {{ heroForm.value.name }}</p>
+            <button (click)="heroForm.resetForm({})">Crear Nuevo Proyecto</button>
         </div>
 
-        <div class="form-group">
-            <label for="modalidad">Modalidad:</label>
-            <input type="text" class="form-control" id="modalidad" required [(ngModel)]="proyecto.modalidad" name="modalidad">
-        </div>
-
-        <div class="form-group">
-            <label for="asesor">Asesor:</label>
-            <input type="text" class="form-control" id="asesor" required [(ngModel)]="proyecto.asesor" name="asesor">
-        </div>
-
-        <div class="form-group">
-            <label for="fechaCreacion">Fecha de Creación:</label>
-            <input type="date" class="form-control" id="fechaCreacion" required [(ngModel)]="proyecto.fecha_Creacion" name="fechaCreacion">
-        </div>
-
-        <div class="form-group">
-            <label for="fechaInicial">Fecha de Inicio:</label>
-            <input type="date" class="form-control" id="fechaInicial" required [(ngModel)]="proyecto.fecha_Inicial" name="fechaInicial">
-        </div>
-
-        <div class="form-group">
-            <label for="fechaFinal">Fecha Final:</label>
-            <input type="date" class="form-control" id="fechaFinal" required [(ngModel)]="proyecto.fecha_Final" name="fechaFinal">
-        </div>
-
-        <div class="form-group">
-            <label for="objetivos">Objetivos:</label>
-            <input type="text" class="form-control" id="objetivos" required [(ngModel)]="proyecto.objetivos" name="objetivos">
-        </div>
-
-        <button type="submit" class="btn btn-success">Crear Proyecto</button>
     </form>
-</div>
-
-
-<div [hidden]="!submitted">
-    <h4>El Proyecto fue Creado</h4>
 </div>
