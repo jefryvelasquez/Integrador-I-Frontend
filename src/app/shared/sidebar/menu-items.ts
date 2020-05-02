@@ -32,13 +32,13 @@ export const ROUTES: RouteInfo[] = [
     class: '',
     extralink: false,
     submenu: []
-  }/*,
+  },
   {
-    path: '/component/CrearProyecto',
-    title: 'Crear Proyecto',
+    path: '/component/CrearObjetivo',
+    title: 'Crear Objetivo',
     icon: 'mdi mdi-equal',
     class: '',
     extralink: false,
     submenu: []
-  }*/
+  }
 ];

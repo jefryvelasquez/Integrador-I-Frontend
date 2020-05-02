@@ -98,7 +98,7 @@
         </div>
 
         <div class="submitted-message" *ngIf="heroForm.submitted">
-            <p>El proyecto fue creado, {{ heroForm.value.name }}</p>
+            <p>{{errorServer}}</p>
             <button (click)="heroForm.resetForm({})">Crear Nuevo Proyecto</button>
         </div>
 

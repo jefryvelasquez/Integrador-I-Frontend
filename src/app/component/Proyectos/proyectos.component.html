@@ -11,7 +11,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let proyecto of proyectos" [class.selected]="proyecto === selectedProyecto"
+          <tr *ngFor="let proyecto of proyectos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" 
+          [class.selected]="proyecto === selectedProyecto"
             (click)="onSelect(proyecto)">
             <th>{{proyecto.id}}</th>
             <td>{{proyecto.name}}</td>
@@ -20,6 +21,22 @@
           </tr>
         </tbody>
       </table>
+
+      <div class="d-flex justify-content-between p-2">
+        <ngb-pagination 
+        [collectionSize]= "proyectos.length"
+        [(page)]="page" 
+        [pageSize]="pageSize"
+        [boundaryLinks]="true">
+        </ngb-pagination>
+
+        <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+          <option [ngValue]="2">2 items per page</option>
+          <option [ngValue]="4">4 items per page</option>
+          <option [ngValue]="6">6 items per page</option>
+        </select>
+      </div>
+
     </div>
     <div class="col-2">
       <button class="btn btn-default" onclick="location.href='/component/CrearProyecto'">
