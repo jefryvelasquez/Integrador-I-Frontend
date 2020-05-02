@@ -1,0 +1,61 @@
+<div class="container">
+
+    <form #heroForm="ngForm" appIdentityRevealed (ngSubmit)="onSubmit()">
+        <div [hidden]="heroForm.submitted">
+            <div class="cross-validation">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" class="form-control" required minlength="4" [(ngModel)]="objetivo.name"
+                        #name="ngModel">
+
+                    <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
+
+                        <div *ngIf="name.errors.required">
+                            El nombre es requerido
+                        </div>
+                        <div *ngIf="name.errors.minlength">
+                            El nombre debe tener al menos 4 caracteres
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="porcentaje">Porcentaje:</label>
+                    <input class="form-control" id="porcentaje" required [(ngModel)]="objetivo.porcentaje"
+                        name="porcentaje" #porcentaje="ngModel">
+
+                    <div *ngIf="porcentaje.invalid && porcentaje.touched" class="alert alert-danger">
+
+                        <div *ngIf="porcentaje.errors.required">
+                            El Porcentaje es requerido
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_proyecto">Id del proyecto:</label>
+                    <input class="form-control" id="id_proyecto" required
+                        [(ngModel)]="objetivo.id" name="id_proyecto" #id_proyecto="ngModel">
+
+                    <div *ngIf="id_proyecto.invalid && id_proyecto.touched" class="alert alert-danger">
+
+                        <div *ngIf="id_proyecto.errors.required">
+                            El id del proyecto es requerido
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-default" [disabled]="heroForm.invalid">Crear Objetivo</button>
+            <button type="button" class="btn btn-default" (click)="heroForm.resetForm({})">Reset</button>
+        </div>
+
+        <div class="submitted-message" *ngIf="heroForm.submitted">
+            <p>{{errorServer}}</p>
+            <button (click)="heroForm.resetForm({})">Crear Nuevo Objetivo</button>
+        </div>
+
+    </form>
+</div>

@@ -12,6 +12,10 @@ export class ProyectosComponent implements OnInit {
 
   proyectos: Proyecto[];
   selectedProyecto: Proyecto;
+  page = 1;
+  pageSize = 4;
+
+  
   
   constructor(private proyectoService: ProyectoService, 
     private messageService: MessageService) { }

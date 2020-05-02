@@ -11,27 +11,24 @@ export class CrearProyectoComponent implements OnInit {
 
   proyectos: Proyecto[];
   proyecto: Proyecto = new Proyecto();
-  submitted = false;
+  errorServer: String;
 
   constructor(private proyectoService: ProyectoService) { }
 
   ngOnInit(): void {
   }
 
-  newProyecto(): void{
-    this.submitted = false;
-    this.proyecto = new Proyecto();
-  }
-
   save() {
     this.proyectoService.addProyecto(this.proyecto)
-    //.subscribe(proyecto => this.proyecto = proyecto);
-      .subscribe(data => console.log(data), error => console.log(error));
+      .subscribe(data => { console.log(data); this.errorServer = "El proyecto fue creado" },
+        error => {
+          console.error(error);
+          this.errorServer = error.error
+        });
     this.proyecto = new Proyecto();
   }
 
   onSubmit() {
-    this.submitted = true;
     this.save();
   }
 

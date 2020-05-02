@@ -1,11 +1,47 @@
-<h2>Mis Proyectos</h2>
+<div style="overflow-x:auto;" class="container">
+  <div class="row">
+    <div class="col-10">
+      <table class="proyectos">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Asesor</th>
+            <th scope="col">Modalidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let proyecto of proyectos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" 
+          [class.selected]="proyecto === selectedProyecto"
+            (click)="onSelect(proyecto)">
+            <th>{{proyecto.id}}</th>
+            <td>{{proyecto.name}}</td>
+            <td>{{proyecto.asesor}} </td>
+            <td>{{proyecto.modalidad}}</td>
+          </tr>
+        </tbody>
+      </table>
 
-<ul class="proyectos">
-  <li *ngFor="let proyecto of proyectos"
-    [class.selected]="proyecto === selectedProyecto"
-    (click)="onSelect(proyecto)">
-    <span class="badge">{{proyecto.id}}</span> {{proyecto.name}}
-  </li>
-</ul>
+      <div class="d-flex justify-content-between p-2">
+        <ngb-pagination 
+        [collectionSize]= "proyectos.length"
+        [(page)]="page" 
+        [pageSize]="pageSize"
+        [boundaryLinks]="true">
+        </ngb-pagination>
 
+        <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+          <option [ngValue]="2">2 items per page</option>
+          <option [ngValue]="4">4 items per page</option>
+          <option [ngValue]="6">6 items per page</option>
+        </select>
+      </div>
+
+    </div>
+    <div class="col-2">
+      <button class="btn btn-default" onclick="location.href='/component/CrearProyecto'">
+        Crear Proyecto</button>
+    </div>
+  </div>
+</div>
 <app-proyecto-detalles [proyecto]="selectedProyecto"></app-proyecto-detalles>
