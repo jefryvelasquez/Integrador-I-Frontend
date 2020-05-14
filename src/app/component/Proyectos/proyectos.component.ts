@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Proyecto } from 'src/app/proyecto';
 import { ProyectoService } from 'src/app/proyecto.service';
 import { MessageService } from 'src/app/message.service';
+import { DatosService } from 'src/app/datos.service';
+
 
 @Component({
   selector: 'app-proyectos',
@@ -12,13 +14,17 @@ export class ProyectosComponent implements OnInit {
 
   proyectos: Proyecto[];
   selectedProyecto: Proyecto;
+  selectedid: number;
   page = 1;
   pageSize = 4;
 
   
-  
+
+  message:string;
+
+
   constructor(private proyectoService: ProyectoService, 
-    private messageService: MessageService) { }
+    private messageService: MessageService, private dataService: DatosService) { }
   
   ngOnInit() {
     this.getProyectos();
@@ -33,6 +39,12 @@ export class ProyectosComponent implements OnInit {
   getProyectos(): void {
     this.proyectoService.getProyectos()
         .subscribe(proyectos => this.proyectos = proyectos);
+  }
+
+  enviar(id: number){
+    console.log("enviando " + id);
+    this.dataService.updateMessage(id);
+    
   }
 
 }

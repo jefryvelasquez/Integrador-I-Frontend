@@ -33,9 +33,17 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: []
   },
-  {
+  /*{
     path: '/component/CrearObjetivo',
     title: 'Crear Objetivo',
+    icon: 'mdi mdi-equal',
+    class: '',
+    extralink: false,
+    submenu: []
+  },*/
+  {
+    path: '/component/ListarObjetivos',
+    title: 'Listar Objetivos',
     icon: 'mdi mdi-equal',
     class: '',
     extralink: false,

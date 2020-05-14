@@ -1,0 +1,47 @@
+<div style="overflow-x:auto;" class="container">
+    <div class="row">
+        <div class="col-10">
+            <table class="objetivos">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Procetanje</th>
+                        <th scope="col">Estado Objetivos</th>
+                        <th scope="col">Entregable</th>
+                        <th scope="col">Acción</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        *ngFor="let objetivo of objetivos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+                        <th>{{objetivo.id}}</th>
+                        <td>{{objetivo.name}}</td>
+                        <td>{{objetivo.porcentaje}} </td>
+                        <td>{{objetivo.estadoObjetivo}} </td>
+                        <td>{{objetivo.entregable}} </td>
+                        <td>Acá van botones</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="d-flex justify-content-between p-2">
+                <ngb-pagination [collectionSize]="objetivos.length" [(page)]="page" [pageSize]="pageSize"
+                    [boundaryLinks]="true">
+                </ngb-pagination>
+
+                <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+                    <option [ngValue]="2">2 items per page</option>
+                    <option [ngValue]="4">4 items per page</option>
+                    <option [ngValue]="6">6 items per page</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="col-2">
+            <button class="btn btn-default" onclick="location.href='/component/CrearObjetivo'">
+                Crear Objetivo</button>
+        </div>
+    </div>
+</div>

@@ -21,6 +21,27 @@ export class ObjetivoService {
         private http: HttpClient,
         private messageService: MessageService) { }
 
+
+    /** GET Objetivos from the server */
+    getObjetivos(): Observable<Objetivo[]> {
+        return this.http.get<Objetivo[]>(this.objetivosUrl +'/objetivos')
+            .pipe(
+                tap(e => console.log(e[0])),
+                catchError(this.handleError<Objetivo[]>('getObjetivos', []))
+            );
+    }
+
+     /** GET Objetivos by id.*/
+  getObjetivosId(id: number): Observable<Objetivo[]> {
+    const url = `${this.objetivosUrl + '/objetivos'}/?idproyecto=${id}`;
+    return this.http.get<Objetivo[]>(url)
+    .pipe(
+        tap(e => console.log(e[0])),
+        catchError(this.handleError<Objetivo[]>('getObjetivosId id=${id}', []))
+    );
+}
+
+
     /** POST: add a new proyecto to the server */
     addObjetivo(objetivo: Objetivo): Observable<Objetivo> {
         return this.http.post<Objetivo>(this.objetivosUrl + '/objetivos/crear/', objetivo, this.httpOptions)

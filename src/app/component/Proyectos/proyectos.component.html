@@ -8,26 +8,27 @@
             <th scope="col">Nombre</th>
             <th scope="col">Asesor</th>
             <th scope="col">Modalidad</th>
+            <th scope="col">Acciones</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let proyecto of proyectos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" 
-          [class.selected]="proyecto === selectedProyecto"
-            (click)="onSelect(proyecto)">
+          <tr *ngFor="let proyecto of proyectos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize"
+            [class.selected]="proyecto === selectedProyecto" (click)="onSelect(proyecto)">
             <th>{{proyecto.id}}</th>
             <td>{{proyecto.name}}</td>
             <td>{{proyecto.asesor}} </td>
             <td>{{proyecto.modalidad}}</td>
+            <td>
+              <button class="btn btn-success" (click)="enviar(proyecto.id)" routerLink="/component/ListarObjetivos" >
+                Listar Objetivos</button>
+            </td>
           </tr>
         </tbody>
       </table>
 
       <div class="d-flex justify-content-between p-2">
-        <ngb-pagination 
-        [collectionSize]= "proyectos.length"
-        [(page)]="page" 
-        [pageSize]="pageSize"
-        [boundaryLinks]="true">
+        <ngb-pagination [collectionSize]="proyectos.length" [(page)]="page" [pageSize]="pageSize"
+          [boundaryLinks]="true">
         </ngb-pagination>
 
         <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">

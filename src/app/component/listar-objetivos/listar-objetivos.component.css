@@ -1,0 +1,32 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  th {
+    height: 50px;
+    text-align: center;
+  }
+  
+  tr {
+    text-align: center;
+    
+  }
+    .proyectos tr:hover {
+      color: #607D8B;
+      background-color: rgb(193, 203, 206);
+      left: .1em;
+    }
+    .proyectos tr.selected {
+      background-color: rgb(124, 161, 152);
+      color: white;
+    }
+    .proyectos tr.selected:hover {
+      background-color: rgb(191, 177, 218);
+      color: white;
+    }
+   

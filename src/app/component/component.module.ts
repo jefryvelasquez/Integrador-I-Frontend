@@ -12,6 +12,7 @@ import { ProyectoDetallesComponent } from './proyecto-detalles/proyecto-detalles
 import { CrearProyectoComponent } from './crear-proyecto/crear-proyecto.component';
 import { MessagesComponent } from './messages/messages.component';
 import { CrearObjetivosComponent } from './crear-objetivos/crear-objetivos.component';
+import { ListarObjetivosComponent } from './listar-objetivos/listar-objetivos.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CrearObjetivosComponent } from './crear-objetivos/crear-objetivos.compo
     ProyectoDetallesComponent,
     CrearProyectoComponent,
     MessagesComponent,
-    CrearObjetivosComponent
+    CrearObjetivosComponent,
+    ListarObjetivosComponent
   ]
 })
 export class ComponentsModule {}

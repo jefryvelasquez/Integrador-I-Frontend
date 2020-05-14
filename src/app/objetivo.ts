@@ -6,4 +6,6 @@ export class Objetivo{
     name: string;
     porcentaje: number;
     id_proyecto: Proyecto;
+    entregable: string;
+    estadoObjetivo: number;
 }

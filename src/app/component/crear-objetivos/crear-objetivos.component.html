@@ -22,20 +22,24 @@
 
                 <div class="form-group">
                     <label for="porcentaje">Porcentaje:</label>
-                    <input class="form-control" id="porcentaje" required [(ngModel)]="objetivo.porcentaje"
-                        name="porcentaje" #porcentaje="ngModel">
+                    <input type="number" class="form-control" id="porcentaje" required [(ngModel)]="objetivo.porcentaje"
+                        name="porcentaje" #porcentaje="ngModel" min="1">
 
                     <div *ngIf="porcentaje.invalid && porcentaje.touched" class="alert alert-danger">
 
                         <div *ngIf="porcentaje.errors.required">
                             El Porcentaje es requerido
                         </div>
+
+                        <div *ngIf="porcentaje.errors.min">
+                            El Porcentaje debe ser mayor a 0
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="id_proyecto">Id del proyecto:</label>
-                    <input class="form-control" id="id_proyecto" required
+                    <input type="number" class="form-control" id="id_proyecto" required
                         [(ngModel)]="objetivo.id" name="id_proyecto" #id_proyecto="ngModel">
 
                     <div *ngIf="id_proyecto.invalid && id_proyecto.touched" class="alert alert-danger">
@@ -45,6 +49,38 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label for="estadoObjetivo">Estado objetivo:</label>
+                    <input type="number"  id="estadoObjetivo" name="estadoObjetivo" class="form-control" required minlength="4" [(ngModel)]="estadoObjetivo.name"
+                        #estadoObjetivo="ngModel">
+
+                    <div *ngIf="estadoObjetivo.invalid && estadoObjetivo.touched" class="alert alert-danger">
+
+                        <div *ngIf="estadoObjetivo.errors.required">
+                            El Estado del objetivo es requerido
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="entregable">Name</label>
+                    <input id="entregable" name="entregable" class="form-control" required minlength="4" [(ngModel)]="objetivo.entregable"
+                        #entregable="ngModel">
+
+                    <div *ngIf="entregable.invalid && entregable.touched" class="alert alert-danger">
+
+                        <div *ngIf="name.errors.required">
+                            El entregable es requerido
+                        </div>
+                        <div *ngIf="entregable.errors.minlength">
+                            El entregable debe tener al menos 4 caracteres
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
 

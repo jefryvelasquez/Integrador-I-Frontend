@@ -3,6 +3,9 @@ import { Routes } from '@angular/router';
 import { NgbdAccordionBasicComponent } from './accordion/accordion.component';
 import { CrearProyectoComponent } from './crear-proyecto/crear-proyecto.component';
 import { CrearObjetivosComponent } from './crear-objetivos/crear-objetivos.component';
+import { ListarObjetivosComponent } from './listar-objetivos/listar-objetivos.component';
+
+
 
 export const ComponentsRoutes: Routes = [
   {
@@ -40,6 +43,18 @@ export const ComponentsRoutes: Routes = [
             { title: 'Dashboard', url: '/dashboard' },
             { title: 'ngComponent' },
             { title: 'CrearObjetivo' }
+          ]
+        }
+      },
+      {
+        path: 'ListarObjetivos',
+        component: ListarObjetivosComponent,
+        data: {
+          title: 'Listar Objetivos',
+          urls: [
+            { title: 'Dashboard', url: '/dashboard' },
+            { title: 'ngComponent' },
+            { title: 'ListarObjetivos' }
           ]
         }
       }
