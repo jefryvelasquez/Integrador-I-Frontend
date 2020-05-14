@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: 'accordion.component.html'
 })
 export class NgbdAccordionBasicComponent {
-  title = 'Gestión de Proyectos';
+  title = 'Projects management';
   
 }

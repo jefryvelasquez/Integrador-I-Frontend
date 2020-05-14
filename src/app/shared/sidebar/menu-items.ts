@@ -40,7 +40,7 @@ export const ROUTES: RouteInfo[] = [
     class: '',
     extralink: false,
     submenu: []
-  },*/
+  },
   {
     path: '/component/ListarObjetivos',
     title: 'Listar Objetivos',
@@ -48,5 +48,5 @@ export const ROUTES: RouteInfo[] = [
     class: '',
     extralink: false,
     submenu: []
-  }
+  }*/
 ];

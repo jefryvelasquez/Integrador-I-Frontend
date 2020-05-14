@@ -4,102 +4,102 @@
         <div [hidden]="heroForm.submitted">
             <div class="cross-validation">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name" i18n="@@nombreCrearObje">Name</label>
                     <input id="name" name="name" class="form-control" required minlength="4" [(ngModel)]="proyecto.name"
                         #name="ngModel">
 
                     <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
 
-                        <div *ngIf="name.errors.required">
-                            El nombre es requerido
+                        <div *ngIf="name.errors.required" i18n="@@NameReq">
+                            Name is required.
                         </div>
-                        <div *ngIf="name.errors.minlength">
-                            El nombre debe tener al menos 4 caracteres
+                        <div *ngIf="name.errors.minlength" i18n="@@NameShortt">
+                            Name must be at least 4 characters long.
                         </div>
 
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="Responsable">Responsable:</label>
+                    <label for="Responsable"i18n="@@respon">Person in charge:</label>
                     <input type="text" class="form-control" id="Responsable" required [(ngModel)]="proyecto.responsable"
                         name="Responsable" #Responsable="ngModel">
 
                     <div *ngIf="Responsable.invalid && Responsable.touched" class="alert alert-danger">
 
-                        <div *ngIf="Responsable.errors.required">
-                            El responsable es requerido
+                        <div *ngIf="Responsable.errors.required" i18n="@@respreq">
+                            Person in charge is required.
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="modalidad">Modalidad:</label>
+                    <label for="modalidad" i18n="@@pm">Modality:</label>
                     <input type="text" class="form-control" id="modalidad" required [(ngModel)]="proyecto.modalidad"
                         name="modalidad">
 
                 </div>
 
                 <div class="form-group">
-                    <label for="asesor">Asesor:</label>
+                    <label for="asesor" i18n="@@pa">Adviser:</label>
                     <input type="text" class="form-control" id="asesor" required [(ngModel)]="proyecto.asesor"
                         name="asesor" #asesor="ngModel">
 
                     <div *ngIf="asesor.invalid && asesor.touched" class="alert alert-danger">
 
-                        <div *ngIf="asesor.errors.required">
-                            El asesor es requerido
+                        <div *ngIf="asesor.errors.required" i18n="@@pareq">
+                            Adviser is required.
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="fechaCreacion">Fecha de Creación:</label>
+                    <label for="fechaCreacion" i18n="@@fechacre">Creation date:</label>
                     <input type="date" class="form-control" id="fechaCreacion" required
                         [(ngModel)]="proyecto.fecha_Creacion" name="fechaCreacion" #fechaCreacion="ngModel">
 
                     <div *ngIf="fechaCreacion.invalid && fechaCreacion.touched" class="alert alert-danger">
 
-                        <div *ngIf="fechaCreacion.errors.required">
-                            La fecha de creación es obligatoria
+                        <div *ngIf="fechaCreacion.errors.required" i18n="@@fechacrereq">
+                            Creation date is required.
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="fechaInicial">Fecha de Inicio:</label>
+                    <label for="fechaInicial" i18n="@@fechaini">Start date:</label>
                     <input type="date" class="form-control" id="fechaInicial" [(ngModel)]="proyecto.fecha_Inicial"
                         name="fechaInicial">
                 </div>
 
                 <div class="form-group">
-                    <label for="fechaFinal">Fecha Final:</label>
+                    <label for="fechaFinal" i18n="@@fechafin">Final date:</label>
                     <input type="date" class="form-control" id="fechaFinal" [(ngModel)]="proyecto.fecha_Final"
                         name="fechaFinal">
                 </div>
 
                 <div class="form-group">
-                    <label for="objetivos">Objetivos:</label>
+                    <label for="objetivos" i18n="@@objetives">Objectives:</label>
                     <input type="text" class="form-control" id="objetivos" required [(ngModel)]="proyecto.objetivos"
                         name="objetivos" #objetivos="ngModel">
 
                     <div *ngIf="objetivos.invalid && objetivos.touched" class="alert alert-danger">
 
-                        <div *ngIf="objetivos.errors.required">
-                            Los objetivos son obligatorios
+                        <div *ngIf="objetivos.errors.required" i18n="@@objetivesew">
+                            Objectives are required.
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <button type="submit" class="btn btn-default" [disabled]="heroForm.invalid">Crear Proyecto</button>
+            <button type="submit" class="btn btn-default" [disabled]="heroForm.invalid" i18n="@@reccsffdgt">Crete Project</button>
             <button type="button" class="btn btn-default" (click)="heroForm.resetForm({})">Reset</button>
         </div>
 
         <div class="submitted-message" *ngIf="heroForm.submitted">
             <p>{{errorServer}}</p>
-            <button (click)="heroForm.resetForm({})">Crear Nuevo Proyecto</button>
+            <button (click)="heroForm.resetForm({})" i18n="@@dffgdf">Crete New Project</button>
         </div>
 
     </form>

@@ -53,6 +53,36 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "production-es": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "outputPath": "dist/",
+              "i18nFile": "src/srclocale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
+            },
+            "es": {
+              "aot": true,
+              "outputPath": "dist/",
+              "i18nFile": "src/srclocale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -64,6 +94,9 @@
           "configurations": {
             "production": {
               "browserTarget": "ng-adminx:build:production"
+            },
+            "es":{
+              "browserTarget": "ng-adminx:build:es"
             }
           }
         },

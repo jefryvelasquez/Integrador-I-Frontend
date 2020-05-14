@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <target>Cerrar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <target>Anterior</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <target>Siguiente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <target>Mes anterior</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <target>Proximo mes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <target>Seleccione mes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <target>Seleccione año</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <target>««</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <target>«</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <target>»</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <target>»»</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <target>Primero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <target>Anterior</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <target>Siguiente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <target>ultimo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{getPercentValue()}}"/>%</source>
+        <target>%</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <target>Incrementar horas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <target>HH</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <target>Horas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <target>Disminuir horas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <target>Incrementar Minutos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <target>MM</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <target>Minutos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <target>Disminuir Minutos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <target>Incrementar Segundos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <target>SS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <target>Segundos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <target>Disminur Segundos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ i18n.getAfternoonPeriod() }}"/></source>
+        <target></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ i18n.getMorningPeriod() }}"/></source>
+        <target></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.toast.close-aria" datatype="html">
+        <source>Close</source>
+        <target>Cerrar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/toast/toast.d.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="index" datatype="html">
+        <source>In the project management module it allows the creation, development and control of<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        teaching, research and extension projects currently being carried out by the <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        systems engineering department of the University of Antioquia.
+        </source>
+        <target>En el módulo de gestión de proyectos permite la creación, desarrollo y control de <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        proyectos de docencia, investigación y extensión que actualmente ejecuta el <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        departamento de ingeniería de sistemas de la Universidad de Antioquia.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/starter/starter.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indexT" datatype="html">
+        <source>PROJECTION OF THE APPLICATION</source>
+        <target>Proyección del aplicativo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/starter/starter.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indexC" datatype="html">
+        <source>Create project</source>
+        <target>Crear proyecto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/starter/starter.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indexL" datatype="html">
+        <source>List Projects</source>
+        <target>Listar Proyectos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/starter/starter.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indexs" datatype="html">
+        <source>Search Projects</source>
+         <target>Buscar Proyectos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/starter/starter.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indexU" datatype="html">
+        <source>Update Projects</source>
+        <target>Actualizar Proyectos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/starter/starter.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="indexD" datatype="html">
+        <source>Delete Projects</source>
+        <target>Borrar Proyectos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/starter/starter.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tt" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{title}}"/></source>
+        <target>Gestión de Proyectos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/accordion/accordion.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pn" datatype="html">
+        <source>Name</source>
+        <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pa" datatype="html">
+        <source>Adviser</source>
+        <target>Asesor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pm" datatype="html">
+        <source>Modality</source>
+        <target>Modalidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pat" datatype="html">
+        <source>Actions</source>
+        <target>Acciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="plo" datatype="html">
+        <source>List Objetives</source>
+        <target>Listar Objetivos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2pp" datatype="html">
+        <source>2 items per page</source>
+        <target>2 items por pagina</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4pp" datatype="html">
+        <source>4 items per page</source>
+         <target>4 items por pagina</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6pp" datatype="html">
+        <source>6 items per page</source>
+         <target>6 items por pagina</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pcp" datatype="html">
+        <source>Create Project</source>
+         <target>Crear Proyecto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/Proyectos/proyectos.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nombreCrearObje" datatype="html">
+        <source>Name</source>
+        <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="NameReq" datatype="html">
+        <source>
+                            Name is required.
+                        </source>
+                        <target>Nombre es obligatorio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="NameShortt" datatype="html">
+        <source>
+                            Name must be at least 4 characters long.
+                        </source>
+                        <target>Nombre debe tener al menos 4 caracteres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="respon" datatype="html">
+        <source>Person in charge:</source>
+        <target>Respondable:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="respreq" datatype="html">
+        <source>
+                            Person in charge is required.
+                        </source>
+                        <target>Respondable es obligatorio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pareq" datatype="html">
+        <source>
+                            Adviser is required.
+                        </source>
+                        <target>Asesor es requerido.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fechacre" datatype="html">
+        <source>Creation date:</source>
+        <target>Fecha de Creación:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fechacrereq" datatype="html">
+        <source>
+                            Creation date is required.
+                        </source>
+                        <target>Fecha es requerida:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fechaini" datatype="html">
+        <source>Start date:</source>
+        <target>Fecha de inicio:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fechafin" datatype="html">
+        <source>Final date:</source>
+        <target>Fecha final:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="objetives" datatype="html">
+        <source>Objectives:</source>
+        <target>Objetivos:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="objetivesew" datatype="html">
+        <source>
+                            Objectives are required.
+                        </source>
+                        <target>Objetivos son obligatorios:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reccsffdgt" datatype="html">
+        <source>Crete Project</source>
+        <target>Crear Proyecto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dffgdf" datatype="html">
+        <source>Crete New Project</source>
+        <target>Crear Nuevo Proyecto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="perceobjet" datatype="html">
+        <source>Percentage:</source>
+        <target>Porcetaje:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="perceobjetewqwe" datatype="html">
+        <source> 
+                            percentage is required.
+                        </source>
+                                <target>Porcetaje es requerido</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="perceobjeterefghdfgb" datatype="html">
+        <source>
+                            The percentage must be greater than 0.
+                        </source>
+                                <target>Porcetaje debe ser mayor a 0.</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pidobh" datatype="html">
+        <source>Project Id:</source>
+        <target>Id Proyecto:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pidobhreq" datatype="html">
+        <source>
+                            Project Id is required.
+                        </source>
+                                <target>Id proyecto es obligatorio:</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="targetesta" datatype="html">
+        <source>Objetive state:</source>
+        <target>Estado objetivo::</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="targetestreqa" datatype="html">
+        <source>
+                            Objetive state is required.
+                        </source>
+                                <target>Estado objetivo es requerido.</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deliobj" datatype="html">
+        <source>Deliverable:</source>
+        <target>Entregable:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deliobjreq" datatype="html">
+        <source>
+                            Deliverable is required.
+                        </source>
+                        <target>Entregable es requerido.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deliobjreqcara" datatype="html">
+        <source>
+                            Deliverable must be at least 4 characters long.
+                        </source>
+                        <target>Entregable debe teber al menos 4 caracteres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dreateobjdhtdkb" datatype="html">
+        <source>Create objective</source>
+        <target>Crear Objetivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dreateobjdhtdkbnew" datatype="html">
+        <source>Create New objective</source>
+        <target>Crear Nuevo Objetivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="namemomo" datatype="html">
+        <source>Name</source>
+        <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pecnre" datatype="html">
+        <source>Percentage</source>
+        <target>Porcentaje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tarehet" datatype="html">
+        <source>Objetive state</source>
+        <target>Estado Objetivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="targdsfsdfetesta" datatype="html">
+        <source>Deliverable</source>
+        <target>Entregable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="acdsfshgf" datatype="html">
+        <source>Action</source>
+        <target>Acción</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dfdcreatopasfh" datatype="html">
+        <source>
+                Create Objetive</source>
+                <target>Crear Objetivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

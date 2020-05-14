@@ -5,11 +5,11 @@
                 <thead>
                     <tr>
                         <th scope="col">id</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Procetanje</th>
-                        <th scope="col">Estado Objetivos</th>
-                        <th scope="col">Entregable</th>
-                        <th scope="col">Acción</th>
+                        <th scope="col" i18n="@@namemomo">Name</th>
+                        <th scope="col" i18n="@@pecnre">Percentage</th>
+                        <th scope="col" i18n="@@tarehet">Objetive state</th>
+                        <th scope="col" i18n="@@targdsfsdfetesta">Deliverable</th>
+                        <th scope="col" i18n="@@acdsfshgf">Action</th>
                         
                     </tr>
                 </thead>
@@ -32,16 +32,16 @@
                 </ngb-pagination>
 
                 <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
-                    <option [ngValue]="2">2 items per page</option>
-                    <option [ngValue]="4">4 items per page</option>
-                    <option [ngValue]="6">6 items per page</option>
+                    <option [ngValue]="2" i18n="@@2pp">2 items per page</option>
+                    <option [ngValue]="4" i18n="@@4pp">4 items per page</option>
+                    <option [ngValue]="6" i18n="@@6pp">6 items per page</option>
                 </select>
             </div>
 
         </div>
         <div class="col-2">
-            <button class="btn btn-default" onclick="location.href='/component/CrearObjetivo'">
-                Crear Objetivo</button>
+            <button class="btn btn-default" onclick="location.href='/component/CrearObjetivo'" i18n="@@dfdcreatopasfh">
+                Create Objetive</button>
         </div>
     </div>
 </div>

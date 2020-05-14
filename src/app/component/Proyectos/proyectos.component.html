@@ -5,10 +5,10 @@
         <thead>
           <tr>
             <th scope="col">id</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Asesor</th>
-            <th scope="col">Modalidad</th>
-            <th scope="col">Acciones</th>
+            <th i18n="@@pn" scope="col">Name</th>
+            <th i18n="@@pa" scope="col">Adviser</th>
+            <th i18n="@@pm" scope="col">Modality</th>
+            <th i18n="@@pat" scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -19,8 +19,7 @@
             <td>{{proyecto.asesor}} </td>
             <td>{{proyecto.modalidad}}</td>
             <td>
-              <button class="btn btn-success" (click)="enviar(proyecto.id)" routerLink="/component/ListarObjetivos" >
-                Listar Objetivos</button>
+              <button class="btn btn-success" (click)="enviar(proyecto.id)" routerLink="/component/ListarObjetivos" i18n="@@plo">List Objetives</button>
             </td>
           </tr>
         </tbody>
@@ -32,16 +31,15 @@
         </ngb-pagination>
 
         <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
-          <option [ngValue]="2">2 items per page</option>
-          <option [ngValue]="4">4 items per page</option>
-          <option [ngValue]="6">6 items per page</option>
+          <option i18n="@@2pp" [ngValue]="2">2 items per page</option>
+          <option i18n="@@4pp" [ngValue]="4">4 items per page</option>
+          <option i18n="@@6pp" [ngValue]="6">6 items per page</option>
         </select>
       </div>
 
     </div>
     <div class="col-2">
-      <button class="btn btn-default" onclick="location.href='/component/CrearProyecto'">
-        Crear Proyecto</button>
+      <button class="btn btn-default" onclick="location.href='/component/CrearProyecto'" i18n="@@pcp">Create Project</button>
     </div>
   </div>
 </div>
