@@ -19,7 +19,7 @@
             <td>{{proyecto.asesor}} </td>
             <td>{{proyecto.modalidad}}</td>
             <td>
-              <button class="btn btn-success" (click)="enviar(proyecto.id)" routerLink="/component/ListarObjetivos" i18n="@@plo">List Objetives</button>
+              <button class="btn btn-success" (click)="enviar(proyecto)" routerLink="/component/ListarObjetivos" i18n="@@plo">List Objetives</button>
             </td>
           </tr>
         </tbody>
@@ -39,7 +39,7 @@
 
     </div>
     <div class="col-2">
-      <button class="btn btn-default" onclick="location.href='/component/CrearProyecto'" i18n="@@pcp">Create Project</button>
+      <button class="btn btn-default" routerLink="/component/CrearProyecto" i18n="@@pcp">Create Project</button>
     </div>
   </div>
 </div>

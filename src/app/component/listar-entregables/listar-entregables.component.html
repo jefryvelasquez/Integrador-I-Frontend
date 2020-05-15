@@ -1,0 +1,44 @@
+<div style="overflow-x:auto;" class="container">
+    <div class="row">
+        <div class="col-10">
+            <table class="entregables">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col" i18n="@@namemomoentre">Id Objetive</th>
+                        <th scope="col" i18n="@@pecnreentre">Name</th>
+                        <th scope="col" i18n="@@tarehetentre">Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        *ngFor="let entregable of entregables | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+                        <th>{{entregable.id}}</th>
+                        <td>{{entregable.idObjetivoEspecifico.id}}</td>
+                        <td>{{entregable.name}} </td>
+                        <td>{{entregable.porcentaje}}% </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="d-flex justify-content-between p-2">
+                <ngb-pagination [collectionSize]="entregables.length" [(page)]="page" [pageSize]="pageSize"
+                    [boundaryLinks]="true">
+                </ngb-pagination>
+
+                <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+                    <option [ngValue]="2" i18n="@@2pp">2 items per page</option>
+                    <option [ngValue]="4" i18n="@@4pp">4 items per page</option>
+                    <option [ngValue]="6" i18n="@@6pp">6 items per page</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="col-2">
+            <button class="btn btn-default" (click)="enviar()" routerLink="/component/CrearEntregables" i18n="@@dfdcreatopasfhentre">
+                Create Deliverable</button>
+            <button class="btn btn-default" (click)="enviar()"routerLink="/component/ListarObjetivos" i18n="@@pcpioppppasdsd">Return to Objetives</button>
+
+        </div>
+    </div>
+</div>

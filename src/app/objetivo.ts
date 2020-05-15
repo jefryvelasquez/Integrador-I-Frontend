@@ -8,4 +8,12 @@ export class Objetivo{
     id_proyecto: Proyecto;
     entregable: string;
     estadoObjetivo: number;
+
+    objetivo(){
+        this.estadoObjetivo = 0;
+    }
+
+    setId(id:number){
+        this.id=id;
+    }
 }

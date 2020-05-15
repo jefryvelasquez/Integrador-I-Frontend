@@ -13,6 +13,8 @@ import { CrearProyectoComponent } from './crear-proyecto/crear-proyecto.componen
 import { MessagesComponent } from './messages/messages.component';
 import { CrearObjetivosComponent } from './crear-objetivos/crear-objetivos.component';
 import { ListarObjetivosComponent } from './listar-objetivos/listar-objetivos.component';
+import { ListarEntregablesComponent } from './listar-entregables/listar-entregables.component';
+import { CrearEntregablesComponent } from './crear-entregables/crear-entregables.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ListarObjetivosComponent } from './listar-objetivos/listar-objetivos.co
     CrearProyectoComponent,
     MessagesComponent,
     CrearObjetivosComponent,
-    ListarObjetivosComponent
+    ListarObjetivosComponent,
+    ListarEntregablesComponent,
+    CrearEntregablesComponent
   ]
 })
 export class ComponentsModule {}

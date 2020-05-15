@@ -556,8 +556,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="dffgdf" datatype="html">
-        <source>Crete New Project</source>
-        <target>Crear Nuevo Proyecto</target>
+        <source>Return to Projects</source>
+        <target>Volver a proyectos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/component/crear-proyecto/crear-proyecto.component.html</context>
           <context context-type="linenumber">102</context>
@@ -668,8 +668,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="dreateobjdhtdkbnew" datatype="html">
-        <source>Create New objective</source>
-        <target>Crear Nuevo Objetivo</target>
+        <source>Return to Objetives</source>
+        <target>Regeresar a Objetivos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/component/crear-objetivos/crear-objetivos.component.html</context>
           <context context-type="linenumber">93</context>
@@ -722,6 +722,79 @@
         <context-group purpose="location">
           <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
           <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oituthdgd" datatype="html">
+        <source>List Deliverable</source>
+        <target>Lista Entregables</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="namemomoentre" datatype="html">
+        <source>Id Objetive</source>
+         <target>Id Objetivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-entregables/listar-entregables.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pecnreentre" datatype="html">
+        <source>Name</source>
+         <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-entregables/listar-entregables.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tarehetentre" datatype="html">
+        <source>Percentage</source>
+         <target>Porcentaje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-entregables/listar-entregables.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dfdcreatopasfhentre" datatype="html">
+        <source>
+                Create Deliverable</source>
+                 <target>Crear entregable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-entregables/listar-entregables.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pcpiopppp" datatype="html">
+        <source>Return to Projects</source>
+         <target>Regresar a Proyectos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-objetivos/listar-objetivos.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dreateobjdhtdkbdeli" datatype="html">
+        <source>Create Deliverable</source>
+        <target>Crear Entregable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-entregables/crear-entregables.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dreateobjdhtdkbnewdlirdf" datatype="html">
+        <source>List Deliverables</source>
+        <target>Lista de entregables</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/crear-entregables/crear-entregables.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pcpioppppasdsd" datatype="html">
+        <source>Return to Objetives</source>
+        <target>Regresar a objetivos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/component/listar-entregables/listar-entregables.component.html</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
     </body>

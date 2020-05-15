@@ -41,9 +41,9 @@ export class ProyectosComponent implements OnInit {
         .subscribe(proyectos => this.proyectos = proyectos);
   }
 
-  enviar(id: number){
-    console.log("enviando " + id);
-    this.dataService.updateMessage(id);
+  enviar(p: Proyecto){
+    console.log("enviando " + p);
+    this.dataService.updateMessage(p);
     
   }
 

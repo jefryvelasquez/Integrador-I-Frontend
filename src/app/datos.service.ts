@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject, Observable, BehaviorSubject} from 'rxjs';
+import { Proyecto } from 'src/app/proyecto'
 
 
 @Injectable({
@@ -7,13 +8,13 @@ import { Subject, Observable, BehaviorSubject} from 'rxjs';
 })
 export class DatosService {
 
-  private myMessage = new BehaviorSubject<number>(0);
+  private myMessage = new BehaviorSubject<Proyecto>(new Proyecto());
   //currentMessage = this.myMessage.asObservable();
-  getMessage(): Observable<number> {
+  getMessage(): Observable<Proyecto> {
     return this.myMessage.asObservable();
   }
 
-  updateMessage(message: number) {
+  updateMessage(message: Proyecto) {
     console.log("desde el servicio "+ message);
     this.myMessage.next(message);
     

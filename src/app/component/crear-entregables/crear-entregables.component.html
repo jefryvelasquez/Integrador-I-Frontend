@@ -1,0 +1,53 @@
+<div class="container">
+
+    <form #heroForm="ngForm" appIdentityRevealed (ngSubmit)="onSubmit()">
+        <div [hidden]="heroForm.submitted">
+            <div class="cross-validation">
+                <div class="form-group">
+                    <label for="name" i18n="@@nombreCrearObje">Name</label>
+                    <input id="name" name="name" class="form-control" required minlength="4" [(ngModel)]="entregable.name"
+                        #name="ngModel">
+
+                    <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
+
+                        <div *ngIf="name.errors.required" i18n="@@NameReq">
+                            Name is required.
+                        </div>
+                        <div *ngIf="name.errors.minlength" i18n="@@NameShortt">
+                            Name must be at least 4 characters long.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="porcentaje" i18n="@@perceobjet">Percentage:</label>
+                    <input type="number" class="form-control" id="porcentaje" required [(ngModel)]="entregable.porcentaje"
+                        name="porcentaje" #porcentaje="ngModel" min="1">
+
+                    <div *ngIf="porcentaje.invalid && porcentaje.touched" class="alert alert-danger">
+
+                        <div *ngIf="porcentaje.errors.required" i18n="@@perceobjetewqwe"> 
+                            percentage is required.
+                        </div>
+
+                        <div *ngIf="porcentaje.errors.min" i18n="@@perceobjeterefghdfgb">
+                            The percentage must be greater than 0.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-default" [disabled]="heroForm.invalid" i18n="@@dreateobjdhtdkbdeli">Create Deliverable</button>
+            <button type="button" class="btn btn-default" (click)="heroForm.resetForm({})">Reset</button>
+        </div>
+
+        <div class="submitted-message" *ngIf="heroForm.submitted">
+            <p>{{errorServer}}</p>
+            <button (click)="enviar()" routerLink="/component/ListarEntregables" i18n="@@dreateobjdhtdkbnewdlirdf">List Deliverables</button>
+        </div>
+
+    </form>
+</div>
