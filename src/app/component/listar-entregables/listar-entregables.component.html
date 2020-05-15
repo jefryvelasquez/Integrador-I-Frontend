@@ -1,7 +1,7 @@
 <div style="overflow-x:auto;" class="container">
     <div class="row">
-        <div class="col-10">
-            <table class="entregables">
+        <div class="col-9">
+            <table class="entregables table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">id</th>
@@ -34,11 +34,17 @@
             </div>
 
         </div>
-        <div class="col-2">
-            <button class="btn btn-default" (click)="enviar()" routerLink="/component/CrearEntregables" i18n="@@dfdcreatopasfhentre">
-                Create Deliverable</button>
-            <button class="btn btn-default" (click)="enviar()"routerLink="/component/ListarObjetivos" i18n="@@pcpioppppasdsd">Return to Objetives</button>
-
+        <div class="col-3">
+            <div class="col-12">
+                <button class="btn btn-outline-info" (click)="enviar()" routerLink="/component/CrearEntregables"
+                    i18n="@@dfdcreatopasfhentre">
+                    Create Deliverable</button>
+            </div>
+            <br>
+            <div class="col-12">
+                <button class="btn btn-outline-info" (click)="enviar()" routerLink="/component/ListarObjetivos"
+                    i18n="@@pcpioppppasdsd">Return to Objetives</button>
+            </div>
         </div>
     </div>
 </div>

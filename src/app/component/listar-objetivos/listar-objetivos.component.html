@@ -1,7 +1,7 @@
 <div style="overflow-x:auto;" class="container">
     <div class="row">
-        <div class="col-10">
-            <table class="objetivos">
+        <div class="col-9">
+            <table class="objetivos table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">id</th>
@@ -10,7 +10,7 @@
                         <th scope="col" i18n="@@tarehet">Objetive state</th>
                         <th scope="col" i18n="@@targdsfsdfetesta">Deliverable</th>
                         <th scope="col" i18n="@@acdsfshgf">Action</th>
-                        
+
                     </tr>
                 </thead>
                 <tbody>
@@ -22,7 +22,8 @@
                         <td>{{objetivo.estadoObjetivo}}% </td>
                         <td>{{objetivo.entregable}} </td>
                         <td>
-                            <button class="btn btn-success" (click)="enviar(objetivo.id)" routerLink="/component/ListarEntregables" i18n="@@oituthdgd">List Deliverable</button>
+                            <button class="btn btn-outline-dark" (click)="enviar(objetivo.id)"
+                                routerLink="/component/ListarEntregables" i18n="@@oituthdgd">List Deliverable</button>
                         </td>
                     </tr>
                 </tbody>
@@ -41,9 +42,16 @@
             </div>
 
         </div>
-        <div class="col-2">
-            <button class="btn btn-default" (click)="enviarC()" routerLink="/component/CrearObjetivo" i18n="@@dfdcreatopasfh">Create Objetive</button>
-            <button class="btn btn-default" routerLink="/component/ListarProyectos" i18n="@@pcpiopppp">Return to Projects</button>
+        <div class="col-3">
+            <div class="col-12">
+                <button class="btn btn-outline-info" (click)="enviarC()" routerLink="/component/CrearObjetivo"
+                    i18n="@@dfdcreatopasfh">Create Objetive</button>
+            </div>
+            <br>
+            <div class="col-12">
+                <button class="btn btn-outline-info" routerLink="/component/ListarProyectos" i18n="@@pcpiopppp">
+                    Return to Projects</button>
+            </div>
         </div>
     </div>
 </div>
